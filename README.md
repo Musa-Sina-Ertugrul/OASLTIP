@@ -37,12 +37,14 @@ For any questions related to the code, please reach me out at akeremtaskan@gmail
 
 - The packages/libraries can be installed by running the commands below in terminal:  
 ```
-pip install numpy  
-python -m pip install -U matplotlib  
-sudo apt install python-tk  
-python -m pip install -U scipy  
-python -m pip install -U filterpy  
-python -m pip install -U sklearn  
-python -m pip install -U shapely  
+sudo apt install python-tk
+pip install -r requirements.txt  
 sudo apt install dvipng texlive-latex-extra texlive-fonts-recommended  
 ```
+- Users have dependency problem may follow this procedures:
+```
+conda create -n test_env python=<desired-python-version> pip
+conda activate test_env
+pip install -r requirements.txt
+```
+> NOTE: Do not forget activate env before run
